@@ -70,22 +70,126 @@ body {
 @-webkit-keyframes downarrow {
     0% { -webkit-transform: translateY(0); opacity: 0.4;}
     100% { -webkit-transform: translateY(0.4em); opacity: 0.9;}
-}
+} 
 
-.hero
+@media(max-width:425px){
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+}
 
 /* ABOUT */
 .about {
     grid-area: about;
-    background-color: crimson;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    max-width: var(--max-width-size);
+    margin: 0 auto;
+}
+
+.about .item {
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.about .item h3 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.about .item p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 30px 0;
+}
+
+.about .item .btn-know-more {
+    font-size: 1.6rem;
+    align-self: flex-start;
+}
+
+.about .item .btn-know-more:hover {
+    font-weight: 700;
+}
+
+.about .image {
+    height: 100%;
+    width: 100%;
+}
+
+.about .image.right {
+    background: url('../img/bridge.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.about .image.left {
+    background: url('../img/sky.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+@media(max-width: 425px) {
+    .about .item {
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
 }
 
 /* SERVICES */
 .services {
     grid-area: services;
-    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
 }
 
+.services .service {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.services .service img {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.services .service h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.services .service p {
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 400px;
+    margin: 20px auto 0;
+    line-height: 25px;
+}
+
+.services .service:nth-child(1) {
+    background-color: lightskyblue;
+}
+
+.services .service:nth-child(2) {
+    background-color: lightpink;
+}
+
+@media(max-width: 425px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+}
 /* PROJECTS */
 .projects {
     grid-area: projects;

@@ -1,7 +1,7 @@
 <p align="center">
 <h2 align="center"> Agência XYZ</h2>
 <p align="center"> Projeto landing page da Agência XYZ. <br>
-Nesse projeto, o intuito foi trabalhar com a proporção das divs em toda a extensão do site usando display grid.</p> <br>
+Nesse projeto, o intuito foi trabalhar com a proporção das divs em toda a extensão do site usando display grid e aplicação do menu hambúrguer na versão mobile do site.</p> <br>
 <img align="center" src="https://i.imgur.com/nTavlQZ.gif" width="100%"> 
 
 <h2 align="center"> Tecnologias utilizadas 💻</h2>

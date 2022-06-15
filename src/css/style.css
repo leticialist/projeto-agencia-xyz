@@ -134,7 +134,7 @@ body {
     background-size: cover;
 }
 
-@media(max-width: 425px) {
+@media(max-width: 500px) {
     .about .item {
         text-align: center;
     }
@@ -184,7 +184,7 @@ body {
     background-color: lightpink;
 }
 
-@media(max-width: 425px) {
+@media(max-width: 500px) {
     .services {
         grid-template-columns: 1fr;
     }
@@ -212,7 +212,7 @@ body {
     }
 }
 
-@media(max-width:425px) {
+@media(max-width:500px) {
     .projects {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
